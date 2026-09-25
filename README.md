@@ -1,6 +1,6 @@
 Multi-Agent Job Search System with CrewAI 🚀
 
-An AI-powered job search assistant built with CrewAI, Streamlit, and Google's Gemini API. It automates the tedious parts of job hunting by analyzing job descriptions, tailoring resumes, writing custom cover letters, and tracking your applications—all from a simple web interface.
+An AI-powered job search assistant built with CrewAI, Streamlit, and Google's Gemini API. It automates the tedious parts of job hunting by analyzing job descriptions, tailoring resumes, writing custom cover letters, and tracking your applications all from a simple web interface.
 
 🛠️ What It Does (The Agent Workflow)
 
@@ -27,18 +27,14 @@ cd job_hunt_assistant
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 
-pip install -r requirements.txt
+
 🔑 Environment Variables
 
-Create a .env file in the project root (next to orchestrator.py) and add your keys:
+Create a .env file in the job_hunt_assistant.utils  and add your keys:
 
-env
-GOOGLE_API_KEY=your_gemini_api_key_here
-USAJOBS_API_KEY=your_usajobs_api_key_here
 GOOGLE_API_KEY — get a free key from Google AI Studio. This powers all four agents via Gemini.
 USAJOBS_API_KEY — get one from USAJOBS Developer Portal to pull live federal job listings.
 
-Never commit .env to GitHub — it should already be listed in .gitignore.
 
 ▶️ Running the App
 bash

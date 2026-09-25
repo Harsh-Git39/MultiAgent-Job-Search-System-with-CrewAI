@@ -10,6 +10,7 @@ JD Analyst: Scrapes and breaks down job descriptions to highlight key requiremen
 Resume & Cover Letter Agent: Matches your background against the job requirements to tailor your resume summary and draft a personalized cover letter.
 Messaging Agent: Generates custom outreach messages (like networking notes or follow-ups).
 Tracking System: Automatically logs your application metadata and saves generated cover letters as text files for future reference.
+
 🗂️ Project Structure
 text
 job_hunt_assistant/

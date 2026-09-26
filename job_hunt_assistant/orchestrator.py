@@ -39,7 +39,7 @@ def run_pipeline(job_data=None, resume_text=None, user_bio=""):
 
     # Initialize LangChain's ChatGoogleGenerativeAI model (supports .bind())
     llm = ChatGoogleGenerativeAI(
-        model="gemini-3.8-flash",
+        model="gemini-3.5-flash",
         temperature=0.7,
         google_api_key=api_key
     )

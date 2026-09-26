@@ -12,7 +12,8 @@ Messaging Agent: Generates custom outreach messages (like networking notes or fo
 Tracking System: Automatically logs your application metadata and saves generated cover letters as text files for future reference.
 
 🗂️ Project Structure
-text
+
+```text
 job_hunt_assistant/
 │
 ├── agents/              # Custom CrewAI agents (JD Analyst, Resume/CL Agent, etc.)
@@ -20,7 +21,7 @@ job_hunt_assistant/
 ├── utils/               # Config, tracking, and helper scripts
 ├── orchestrator.py      # CrewAI pipeline configuration & task coordination
 └── streamlit_app.py     # Main Streamlit web UI
-
+```
 
 ⚙️ Setup & Installation
 bash

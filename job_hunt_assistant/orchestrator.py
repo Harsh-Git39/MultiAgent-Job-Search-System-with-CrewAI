@@ -4,7 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from agents.jd_analyst import get_jd_analyst_agent, create_jd_analysis_task
 from agents.resume_cl_agent import get_resume_cl_agent, create_resume_cl_task
 from agents.messaging_agent import get_messaging_agent, create_messaging_task
-
+from crewai import LLM
 try:
     from utils.usajobs_api import fetch_usajobs
 except ImportError:
@@ -38,10 +38,10 @@ def run_pipeline(job_data=None, resume_text=None, user_bio=""):
     api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
 
     # Initialize LangChain's ChatGoogleGenerativeAI model (supports .bind())
-    llm = ChatGoogleGenerativeAI(
-        model="gemini-3.5-flash-lite",
+    llm = LLM(
+        model="gemini/gemini-3.5-flash-lite",
         temperature=0.7,
-        google_api_key=api_key
+        api_key=api_key
     )
 
     # Default fallback when run directly via CLI

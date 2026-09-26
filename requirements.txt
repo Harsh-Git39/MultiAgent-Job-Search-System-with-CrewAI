@@ -3,3 +3,4 @@ crewai
 langchain-google-genai
 pydantic
 requests
+proto-plus
